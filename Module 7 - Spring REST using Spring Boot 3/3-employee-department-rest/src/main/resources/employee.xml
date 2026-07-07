@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <bean id="deptTechnology" class="com.cognizant.springlearn.model.Department"><property name="id" value="1"/><property name="name" value="Technology"/></bean>
+    <bean id="deptHr" class="com.cognizant.springlearn.model.Department"><property name="id" value="2"/><property name="name" value="Human Resources"/></bean>
+    <bean id="deptFinance" class="com.cognizant.springlearn.model.Department"><property name="id" value="3"/><property name="name" value="Finance"/></bean>
+    <util:list id="departmentList" value-type="com.cognizant.springlearn.model.Department"><ref bean="deptTechnology"/><ref bean="deptHr"/><ref bean="deptFinance"/></util:list>
+    <bean id="skillJava" class="com.cognizant.springlearn.model.Skill"><property name="id" value="1"/><property name="name" value="Java"/></bean>
+    <bean id="skillAngular" class="com.cognizant.springlearn.model.Skill"><property name="id" value="2"/><property name="name" value="Angular"/></bean>
+    <bean id="employee1" class="com.cognizant.springlearn.model.Employee"><property name="id" value="1"/><property name="name" value="John"/><property name="salary" value="50000"/><property name="permanent" value="true"/><property name="department" ref="deptTechnology"/><property name="skills"><util:list><ref bean="skillJava"/><ref bean="skillAngular"/></util:list></property></bean>
+    <bean id="employee2" class="com.cognizant.springlearn.model.Employee"><property name="id" value="2"/><property name="name" value="Jane"/><property name="salary" value="60000"/><property name="permanent" value="true"/><property name="department" ref="deptHr"/><property name="skills"><util:list><ref bean="skillJava"/></util:list></property></bean>
+    <bean id="employee3" class="com.cognizant.springlearn.model.Employee"><property name="id" value="3"/><property name="name" value="Rahul"/><property name="salary" value="45000"/><property name="permanent" value="false"/><property name="department" ref="deptFinance"/><property name="skills"><util:list><ref bean="skillAngular"/></util:list></property></bean>
+    <util:list id="employeeList" value-type="com.cognizant.springlearn.model.Employee"><ref bean="employee1"/><ref bean="employee2"/><ref bean="employee3"/></util:list>
+</beans>
