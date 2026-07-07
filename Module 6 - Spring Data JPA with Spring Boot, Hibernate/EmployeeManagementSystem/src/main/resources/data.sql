@@ -1,0 +1,5 @@
+insert into department (id, name, created_by, created_date, last_modified_by, last_modified_date) values (1, 'Engineering', 'system', CURRENT_TIMESTAMP, 'system', CURRENT_TIMESTAMP);
+insert into department (id, name, created_by, created_date, last_modified_by, last_modified_date) values (2, 'Finance', 'system', CURRENT_TIMESTAMP, 'system', CURRENT_TIMESTAMP);
+insert into employee (id, name, email, department_id, created_by, created_date, last_modified_by, last_modified_date) values (1, 'Anita Rao', 'anita.rao@example.com', 1, 'system', CURRENT_TIMESTAMP, 'system', CURRENT_TIMESTAMP);
+insert into employee (id, name, email, department_id, created_by, created_date, last_modified_by, last_modified_date) values (2, 'Rahul Shah', 'rahul.shah@example.com', 1, 'system', CURRENT_TIMESTAMP, 'system', CURRENT_TIMESTAMP);
+insert into employee (id, name, email, department_id, created_by, created_date, last_modified_by, last_modified_date) values (3, 'Meera Singh', 'meera.singh@example.com', 2, 'system', CURRENT_TIMESTAMP, 'system', CURRENT_TIMESTAMP);
