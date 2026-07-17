@@ -1,0 +1,7 @@
+.App-light { background: #ffffff; color: #000000; }
+.App-dark { background: #222222; color: #ffffff; }
+
+.btn-light { background: #eeeeee; color: #000; border: 1px solid #ccc; }
+.btn-dark { background: #444444; color: #fff; border: 1px solid #666; }
+
+.card { padding: 10px; margin: 10px; border: 1px solid #999; border-radius: 8px; display: inline-block; }
